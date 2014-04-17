@@ -1,0 +1,5 @@
+#!/bin/sh
+NOW=`date +%Y%m%d%H%M%S`
+adb shell screencap -p /sdcard/screen_${NOW}.png
+adb pull /sdcard/screen_${NOW}.png
+adb shell rm /sdcard/screen_${NOW}.png
